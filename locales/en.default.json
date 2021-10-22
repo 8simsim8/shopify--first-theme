@@ -46,7 +46,8 @@
       "close": "Close share",
       "copy_to_clipboard": "Copy link",
       "share_url": "Link",
-      "success_message": "Link copied to clipboard"
+      "success_message": "Link copied to clipboard",
+      "hello": "Hello en"
     }
   },
   "newsletter": {
@@ -139,8 +140,7 @@
       "xr_button": "View in your space",
       "xr_button_label": "View in your space, loads item in augmented reality window",
       "include_taxes": "Tax included.",
-      "shipping_policy_html":
-      "<a href=\"{{ link }}\">Shipping</a> calculated at checkout."
+      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout."
     },
     "modal": {
       "label": "Media gallery"
