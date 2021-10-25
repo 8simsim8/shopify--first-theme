@@ -12,7 +12,7 @@
 
 <div>
   <img
-    src="{{ section.settings.image | img_url }}"
+    src="{{ section.settings.image | img_url: '100%' }}"
     loading="lazy"
     width="{{ section.settings.image.width }}"
     height="{{ section.settings.image.height }}"
