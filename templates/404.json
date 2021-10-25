@@ -2,6 +2,17 @@
   "sections": {
     "main": {
       "type": "main-404"
+    },
+    "blocks": {
+      "featured_image": {
+        "type": "featured_image"
+      },
+      "title": {
+        "type": "title"
+      },
+      "content": {
+        "type": "content"
+      }
     }
   },
   "order": [
