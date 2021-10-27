@@ -1,11 +1,8 @@
-{%- for block in section.blocks -%}
-  {%- case block.type -%}
-    {%- when 'main' -%}
+
     <section>
-      <div>{{block.settings.text | escape}}</div>
+      <div>{{section.settings.text | escape}}</div>
     </section>
-  {%- endcase -%}
-{%- endfor -%}
+
 
 {% schema %}
   {
