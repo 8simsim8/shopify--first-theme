@@ -1,11 +1,16 @@
 <section>
-  <div>Main 404</div>
+  <div>{{block.settings.text}}</div>
 </section>
 
 {% schema %}
   {
     "name": "404 Main section",
-    "settings": []
+    "settings": [{
+		"type": "text",
+        "id": "text",
+		"default": "404 page section",
+        "label": "Change text 404 page section"
+	}]
   }
 {% endschema %}
 
