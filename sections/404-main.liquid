@@ -1,6 +1,11 @@
-<section>
-  <div>{{block.settings.text | escape}}</div>
-</section>
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+    {%- when '404-main' -%}
+    <section>
+      <div>{{block.settings.text | escape}}</div>
+    </section>
+  {%- endcase -%}
+{%- endfor -%}
 
 {% schema %}
   {
