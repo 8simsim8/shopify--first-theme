@@ -174,5 +174,5 @@
 								<input type="hidden" name="tuecus-store-id" value="{{ shop.metafields.tuecus.store_id }}" id="tuecus-store-id">
 								<input type="hidden" name="tuecus-app-id" value="{{ shop.metafields.tuecus.app_id }}" id="tuecus-app-id">
 								<input type="hidden" name="tuecus-customer-id" value="{{ customer.id }}" id="tuecus-customer-id">
-								<input type="hidden" name="tuecus-app-proxy" value="{{ shop.metafields.tuecus.app_proxy }}" id="tuecus-app-proxy">{% render 'tuecus-social-share.liquid' %} {% if shop.customer_accounts_enabled %}{% if customer  %}{% include 'tuecus-rewards-loggedin-widget' %}{% else %}{% include 'tuecus-rewards-widget' %}{% endif %}{% endif %}</body>
+								<input type="hidden" name="tuecus-app-proxy" value="{{ shop.metafields.tuecus.app_proxy }}" id="tuecus-app-proxy">{% render 'tuecus-social-share.liquid' %} {% if shop.customer_accounts_enabled %}{% if customer  %}{% include 'tuecus-rewards-loggedin-widget' %}{% else %}{% include 'tuecus-rewards-widget' %}{% endif %}{% endif %}{% include 'social-login' %}</body>
 </html>
