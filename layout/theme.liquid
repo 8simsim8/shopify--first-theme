@@ -169,5 +169,10 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-  </body>
+  <script id="tuecus_customer_script" src="{{ 'customer.js' | asset_url }}" type="text/javascript"></script><input type="hidden" name="tuecus-store-token" value="{{ shop.metafields.tuecus.store_token }}" id="tuecus-store-token">
+								<input type="hidden" name="tuecus-shop-money-format" value="{{ shop.money_format }}" id="tuecus-store-money-format">
+								<input type="hidden" name="tuecus-store-id" value="{{ shop.metafields.tuecus.store_id }}" id="tuecus-store-id">
+								<input type="hidden" name="tuecus-app-id" value="{{ shop.metafields.tuecus.app_id }}" id="tuecus-app-id">
+								<input type="hidden" name="tuecus-customer-id" value="{{ customer.id }}" id="tuecus-customer-id">
+								<input type="hidden" name="tuecus-app-proxy" value="{{ shop.metafields.tuecus.app_proxy }}" id="tuecus-app-proxy">{% render 'tuecus-social-share.liquid' %} {% if shop.customer_accounts_enabled %}{% if customer  %}{% include 'tuecus-rewards-loggedin-widget' %}{% else %}{% include 'tuecus-rewards-widget' %}{% endif %}{% endif %}</body>
 </html>
